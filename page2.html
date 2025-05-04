@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фолиант Тлеющего Света — Глава II</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'EB Garamond', serif;
+      background: radial-gradient(ellipse at center, #e2d9c1 0%, #cbbf9a 100%);
+      margin: 0;
+      padding: 2em 1em;
+      line-height: 1.7;
+      color: #3b2e1a;
+    }
+    .page {
+      background: url('https://cdn.pixabay.com/photo/2016/06/10/16/19/paper-1443209_1280.jpg') center/cover no-repeat;
+      box-shadow: inset 0 0 160px rgba(0,0,0,0.5), 0 0 25px rgba(0,0,0,0.25);
+      max-width: 900px;
+      margin: auto;
+      padding: 5vw;
+      border-radius: 16px;
+      position: relative;
+      border: 5px double #7b674c;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.4em;
+      margin-bottom: 0.5em;
+    }
+    .decorative-line {
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #8b7350, transparent);
+      margin: 3em auto;
+    }
+    p, li {
+      font-size: 1.1em;
+      text-align: justify;
+    }
+    ul.runes {
+      list-style: none;
+      padding: 0;
+      margin: 2em 0;
+    }
+    ul.runes li {
+      margin-bottom: 1em;
+      padding: 1em;
+      background: rgba(255, 255, 230, 0.4);
+      border-left: 4px solid #a08660;
+      border-radius: 6px;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 3em;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #3b2e1a;
+      border: 2px solid #a08660;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      background: rgba(255, 255, 230, 0.3);
+    }
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+    }
+    a.next-page, a.back-link {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>Глава II — Первые Руны и Заклинания</h1>
+  <div class="decorative-line"></div>
+
+  <p>Постижение магии света начинается с понимания её символов. Каждая руна несёт в себе поток — направление энергии, её смысл и силу. Они не просто знаки, а отпечатки намерения в ткани реальности.</p>
+
+  <ul class="runes">
+    <li><strong>Руна Иллен:</strong> символ внутреннего света. Используется для очистки сознания и медитаций.</li>
+    <li><strong>Руна Кай:</strong> концентрация. Стабилизирует поток энергии в круге начертания.</li>
+    <li><strong>Руна Лиор:</strong> зов света. Активирует защитные чары на короткий срок.</li>
+  </ul>
+
+  <p>Чтобы использовать любую руну, маг должен не просто изобразить её, но и принять соответствующее внутреннее состояние. В этом состоит истинная сложность пути Света.</p>
+
+  <div class="decorative-line"></div>
+  <a href="index.html" class="back-link">⮜ Вернуться к вступлению</a>
+</div>
+<script>
+  document.querySelectorAll('a.next-page, a.back-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.body.classList.add('fade-out');
+      const href = this.getAttribute('href');
+      setTimeout(() => {
+        window.location.href = href;
+      }, 600);
+    });
+  });
+</script>
+</body>
+</html>
