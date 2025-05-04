@@ -105,7 +105,27 @@
                 padding: 1.5em;
             }
         }
-    </style>
+            .next-page {
+            display: block;
+            margin: 3em auto 0;
+            text-align: center;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #3b2e1a;
+            border: 2px solid #a08660;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+            background: rgba(255, 255, 230, 0.3);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        .next-page:hover {
+            background: rgba(255, 255, 200, 0.4);
+            transform: scale(1.03);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+        }
+
+</style>
 </head>
 <body>
 <div class="page" style="position: relative; z-index: 2;">
@@ -132,7 +152,8 @@
 
     <div class="decorative-line"></div>
 
-    <p>Следующие страницы этого фолианта откроют тебе тайны заклинаний и практик света, но лишь если твоё сердце будет готово к этому знанию.</p>
+    $1
+<a href="page2.html" class="next-page">⮕ Перелистнуть страницу</a>
 </div>
 </body>
 </html>
