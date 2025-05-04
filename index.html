@@ -81,11 +81,30 @@
       z-index: 1;
       transition: width 0.3s ease;
     }
+    .margin-note {
+      position: absolute;
+      font-size: 0.9em;
+      font-style: italic;
+      color: #473622;
+      max-width: 160px;
+      background: rgba(255,255,230,0.85);
+      border: 1px dashed #a08660;
+      padding: 8px;
+      border-radius: 6px;
+      z-index: 2;
+    }
+    .note-1 { top: 40px; left: -170px; }
+    .note-2 { top: 300px; right: -180px; }
+    .note-3 { bottom: 120px; left: -170px; }
   </style>
 </head>
 <body>
 <img src="images/sigil.png" alt="Магический сигил" class="sigil">
 <div class="page">
+  <div class="margin-note note-1">Не забыть: сила света растёт на рассвете — использовать для усиления ритуалов.</div>
+  <div class="margin-note note-2"><del>Проверить свитки из библиотеки Серебряного Круга — возможно, содержат утраченные элементы этого учения.</del></div>
+  <div class="margin-note note-3">Сравнить с записями из фолианта Пламени — есть сходства в структуре чар.</div>
+
   <h1>Фолиант Тлеющего Света</h1>
   <div class="decorative-line"></div>
 
