@@ -63,17 +63,30 @@
       border-radius: 8px;
       background: rgba(255, 255, 230, 0.3);
     }
-    body.fade-out {
-      opacity: 0;
-      transition: opacity 0.6s ease-out;
-    }
-    a.next-page, a.back-link {
-      cursor: pointer;
-    }
-  </style>
+          body.fade-out {
+            opacity: 0;
+            transition: opacity 0.6s ease-out;
+        }
+        a.next-page, a.back-link {
+            cursor: pointer;
+        }
+.sigil {
+  position: fixed;
+  width: clamp(60px, 12vw, 120px);
+  height: auto;
+  top: 2vw;
+  left: 2vw;
+  opacity: 0.6;
+  pointer-events: none;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+  z-index: 1;
+  transition: width 0.3s ease;
+}
+</style>
 </head>
 <body>
 <div class="page">
+  <img src="images/sigil.png" alt="Магический сигил" class="sigil">
   <h1>Глава II — Первые Руны и Заклинания</h1>
   <div class="decorative-line"></div>
 
@@ -88,7 +101,7 @@
   <p>Чтобы использовать любую руну, маг должен не просто изобразить её, но и принять соответствующее внутреннее состояние. В этом состоит истинная сложность пути Света.</p>
 
   <div class="decorative-line"></div>
-  <a href="index.html" class="back-link">⮜ Вернуться к вступлению</a>
+<a href="index.html" class="back-link">⮜ Вернуться к вступлению</a>
 </div>
 <script>
   document.querySelectorAll('a.next-page, a.back-link').forEach(link => {
