@@ -27,6 +27,7 @@
             border-radius: 15px;
             position: relative;
             border: 4px solid #8e775a;
+            overflow: visible;
         }
         h1 {
             text-align: center;
@@ -49,14 +50,15 @@
             font-style: italic;
             color: #5f4b35;
             max-width: 160px;
-            background: rgba(255,255,240,0.6);
+            background: rgba(255,255,240,0.9);
             border: 1px dashed #a08660;
             padding: 6px;
             border-radius: 6px;
+            z-index: 10;
         }
-        .note-1 { top: 60px; left: -180px; }
-        .note-2 { top: 350px; right: -200px; }
-        .note-3 { bottom: 100px; left: -180px; }
+        .note-1 { top: 40px; left: -170px; }
+        .note-2 { top: 300px; right: -180px; }
+        .note-3 { bottom: 120px; left: -170px; }
 
         .decorative-line {
             width: 80%;
@@ -71,7 +73,7 @@
         .sigil {
             position: absolute;
             width: 100px;
-            height: auto;
+            height: 100px;
             top: 20px;
             left: 20px;
             opacity: 0.6;
@@ -99,7 +101,7 @@
 </head>
 <body>
 <div class="page">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABZElEQVR4nO2XwQ3CMBBF7xqGgAcoYAMpgAxRgAzRgA7GgA1SgA5ygX8N6M+RrHXVu71ae3ltgQRAEQRAEQRAERBEILhQKrxKv+j9C6mCHArAOhfcV1pqQZkguAvKhZDfkjM1cLyOohrcFYBKHQu+MsAYQAo+ekLHEPg+yaL2RjBhr+HYFQW8flAcAAmVn97OgvfViIHDJoLI9ThpgVAGk92R7S6mLREwA7m8ThgNcbAE2aw2CR2EfzG8KfEdMijxCDsmW4AiK6CvBPLcL7uAZA6kTf71vNaOsJvFnxuM8cSu+dhJQRAEQRAEQRAEqUQQghBc8AdRM3F1duTIfAAAAAElFTkSuQmCC" alt="Магический сигил" class="sigil">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAABW0lEQVR4nO3VsQ2DMBBF0e/YBAcGkRZBHYQR+4ZjwEoBLssPus79thV+kmfp8MAAAAAAAAAADgPdd7r+Wj/fD9z4ddx6MH9cPT45Lxdj/3/IeL3ZLw9L0Ti2+GTTf3dj+f7s97xyZBPZGeHr3B+3Hy5w77x4uhT79eLg3+N0etXPCzOZ+CD94dvR3lfMXBQAAAAAAAAAAgL+pF2YYa5D/xAAAAABJRU5ErkJggg==" alt="Магический сигил" class="sigil">
     <div class="burn-mark"></div>
 
     <div class="margin-note note-1">Не забыть: сила света растёт на рассвете — использовать для усиления ритуалов.</div>
