@@ -77,16 +77,16 @@
             margin-bottom: 1.5em;
         }
         .sigil {
-            position: absolute;
-            max-width: 18vw;
-            width: 100%;
-            height: auto;
-            top: 2vw;
-            left: 2vw;
-            opacity: 0.6;
-            pointer-events: none;
-            filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
-        }
+    position: absolute;
+    width: clamp(60px, 18vw, 140px);
+    height: auto;
+    top: 2vw;
+    left: 2vw;
+    opacity: 0.6;
+    pointer-events: none;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+    transition: width 0.3s ease;
+}
         .burn-mark {
             position: absolute;
             width: clamp(40px, 8vw, 80px);
@@ -108,7 +108,7 @@
 </head>
 <body>
 <div class="page">
-    <img src="images/sigil.png" alt="Магический сигил" class="sigil" style="display: block;">
+    <img src="images/sigil.png" alt="Магический сигил" class="sigil">
     <div class="burn-mark"></div>
 
     <div class="margin-note note-1">Не забыть: сила света растёт на рассвете — использовать для усиления ритуалов.</div>
