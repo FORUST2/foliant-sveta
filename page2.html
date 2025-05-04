@@ -82,10 +82,54 @@
       background: rgba(255, 255, 200, 0.4);
       transform: scale(1.03);
     }
+      .sigil {
+      position: absolute;
+      top: 2vw;
+      left: 2vw;
+      width: clamp(60px, 12vw, 120px);
+      height: auto;
+      opacity: 0.6;
+      pointer-events: none;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+      z-index: 1;
+    }
+      .margin-note {
+      position: absolute;
+      font-size: 0.85em;
+      font-style: italic;
+      background: rgba(255,255,230,0.85);
+      border: 1px dashed #a08660;
+      color: #473622;
+      padding: 8px;
+      border-radius: 6px;
+      max-width: 160px;
+      z-index: 2;
+    }
+    .note-master {
+      border-color: #886644;
+    }
+    .note-apprentice {
+      background: rgba(240,255,250,0.85);
+      border-color: #4d7261;
+      color: #2e4036;
+    }
+    .note-1 { top: 40px; left: -170px; }
+    .note-2 { top: 200px; right: -180px; }
+    .note-3 { top: 430px; left: -170px; }
+    .note-4 { bottom: 200px; right: -180px; }
+    .note-5 { bottom: 80px; left: -170px; }
+      
   </style>
 </head>
 <body>
 <div class="page">
+  <img src="images/sigil.png" alt="Магический сигил" class="sigil">
+  <div class="margin-note note-master border-label note-1" data-author="Архимаг">Наблюдать за реакцией на руну Иллен у разных адептов.</div>
+  <div class="margin-note note-apprentice border-label note-2" data-author="Ученик">Мастер велел не использовать Лиор без сопровождения Кай...</div>
+  <div class="margin-note note-master border-label note-3" data-author="Архимаг">Записать изменения чувствительности к свету после ритуала.</div>
+  <div class="margin-note note-apprentice border-label note-4" data-author="Ученик">Почему Кай кажется холодной? Возможно, ошибка в интонации.</div>
+  <div class="margin-note note-master border-label note-5" data-author="Архимаг">Проверить трактовку символа Иллен у южных школ.</div>
+  <img src="images/sigil.png" alt="Магический сигил" class="sigil">
   <h1>Глава II — Первые Руны и Заклинания</h1>
   <div class="decorative-line"></div>
 
@@ -97,11 +141,11 @@
     <strong>Руна Иллен:</strong> символ внутреннего света. Используется для очистки сознания и медитаций.
   </li>
   <li>
-    <img src="images/rune_kai.png" alt="Руна Кай" style="width: 60px; vertical-align: middle; margin-right: 12px;">
+    <img src="images/rune_kai_new.png" alt="Руна Кай" style="width: 60px; vertical-align: middle; margin-right: 12px;">
     <strong>Руна Кай:</strong> концентрация. Стабилизирует поток энергии в круге начертания.
   </li>
   <li>
-    <img src="images/rune_lior.png" alt="Руна Лиор" style="width: 60px; vertical-align: middle; margin-right: 12px;">
+    <img src="images/rune_lior_new.png" alt="Руна Лиор" style="width: 60px; vertical-align: middle; margin-right: 12px;">
     <strong>Руна Лиор:</strong> зов света. Активирует защитные чары на короткий срок.
   </li>
 </ul>
