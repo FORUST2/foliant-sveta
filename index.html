@@ -125,8 +125,6 @@
   </div>
 <div class="decorative-line"></div>
 <p>Следующие страницы этого фолианта откроют тебе тайны заклинаний и практик света, но лишь если твоё сердце будет готово к этому знанию.</p>
-
-
 <div id="nav-placeholder"></div>
 <script>
   fetch("navigation.html")
@@ -134,12 +132,7 @@
     .then(data => document.getElementById("nav-placeholder").innerHTML = data);
 </script>
 
-<div id="nav-placeholder"></div>
-<script>
-  fetch("navigation.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("nav-placeholder").innerHTML = data);
-</script>
+
 </div>
 <script>
   document.querySelectorAll('a.next-page').forEach(link => {
